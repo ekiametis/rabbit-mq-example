@@ -1,0 +1,15 @@
+{
+  "name": "rabbit-mq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/artillery/bin/artillery run ./artillery/script.yml"
+  },
+  "author": "Emmanuel Kiametis",
+  "license": "ISC",
+  "dependencies": {
+    "artillery": "^1.6.1",
+    "faker": "^4.1.0"
+  }
+}

@@ -1,0 +1,16 @@
+config:  
+  target: "http://localhost:4000"
+  http:
+    maxSockets: 20
+  phases:
+    - duration: 300
+      arrivalRate: 400
+  processor: "./script.js"
+  defaults:
+    headers:
+      Content-Type: 'application/json'
+scenarios:
+  - flow:
+    - post:
+        url: "/"
+        beforeRequest: "populateMessage"
